@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import CalculadoraINSS from "@/components/calculadoras/CalculadoraINSS";
 import SimuladorBPC from "@/components/calculadoras/SimuladorBPC";
 import CalculadoraAuxilioGas from "@/components/calculadoras/CalculadoraAuxilioGas";
+import Footer from "@/components/Footer";
 
 const Calculadoras = () => {
   return (
@@ -45,6 +46,7 @@ const Calculadoras = () => {
           </div>
         </section>
       </main>
+      <Footer />
     </>
   );
 };

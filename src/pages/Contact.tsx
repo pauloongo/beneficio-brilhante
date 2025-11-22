@@ -8,6 +8,7 @@ import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { toast } from "sonner";
+import Footer from "@/components/Footer";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -132,6 +133,7 @@ const Contact = () => {
           </div>
         </main>
       </div>
+      <Footer />
     </>
   );
 };

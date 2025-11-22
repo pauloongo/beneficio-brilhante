@@ -26,7 +26,7 @@ const Header = () => {
               <Button variant="ghost">Sobre</Button>
             </Link>
             <Link to="/contato">
-              <Button variant="ghost">Contato</Button>
+              <Button variant="ghost" className="hidden md:inline-flex">Contato</Button>
             </Link>
           </div>
         </nav>

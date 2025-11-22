@@ -6,6 +6,7 @@ import { Helmet } from "react-helmet";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
+import Footer from "@/components/Footer";
 
 const About = () => {
   const { data: authors } = useQuery({
@@ -100,8 +101,11 @@ const About = () => {
                           <AvatarImage src={author.photo_url || ""} alt={author.name} />
                           <AvatarFallback>{author.name.charAt(0)}</AvatarFallback>
                         </Avatar>
-                        <div>
+                         <div>
                           <CardTitle className="text-xl">{author.name}</CardTitle>
+                          {author.credentials && (
+                            <p className="text-sm text-muted-foreground mt-1">{author.credentials}</p>
+                          )}
                         </div>
                       </div>
                     </CardHeader>
@@ -150,6 +154,7 @@ const About = () => {
           })}
         </script>
       </div>
+      <Footer />
     </>
   );
 };
