@@ -1,0 +1,13 @@
+{
+  "name": "sitemap-generator",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Script to generate sitemap.xml",
+  "scripts": {
+    "generate": "node generate-sitemap.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.80.0",
+    "dotenv": "^16.4.5"
+  }
+}
