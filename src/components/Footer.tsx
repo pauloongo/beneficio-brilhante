@@ -22,7 +22,7 @@ const Footer = () => {
           {/* Sobre */}
           <div>
             <h3 className="font-bold text-lg mb-4">Socio-Guide</h3>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-sm text-secondary-foreground/90 mb-4">
               Portal informativo sobre benefícios sociais brasileiros. Guias, simuladores e conteúdo atualizado para 
               ajudar você a entender seus direitos.
             </p>
@@ -33,22 +33,22 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-4">Informações Legais</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link to="/politica-de-privacidade" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link to="/politica-de-privacidade" className="text-secondary-foreground/80 hover:text-secondary-foreground transition-colors underline-offset-4 hover:underline">
                   Política de Privacidade
                 </Link>
               </li>
               <li>
-                <Link to="/termos-de-uso" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link to="/termos-de-uso" className="text-secondary-foreground/80 hover:text-secondary-foreground transition-colors underline-offset-4 hover:underline">
                   Termos de Uso
                 </Link>
               </li>
               <li>
-                <Link to="/sobre" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link to="/sobre" className="text-secondary-foreground/80 hover:text-secondary-foreground transition-colors underline-offset-4 hover:underline">
                   Sobre Nós
                 </Link>
               </li>
               <li>
-                <Link to="/contato" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link to="/contato" className="text-secondary-foreground/80 hover:text-secondary-foreground transition-colors underline-offset-4 hover:underline">
                   Contato
                 </Link>
               </li>
@@ -60,17 +60,17 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-4">Recursos</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link to="/calculadoras" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link to="/calculadoras" className="text-secondary-foreground/80 hover:text-secondary-foreground transition-colors underline-offset-4 hover:underline">
                   Simuladores Gratuitos
                 </Link>
               </li>
               <li>
-                <Link to="/blog" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link to="/blog" className="text-secondary-foreground/80 hover:text-secondary-foreground transition-colors underline-offset-4 hover:underline">
                   Blog e Artigos
                 </Link>
               </li>
               <li>
-                <Link to="/simulador-bolsa-familia-2026" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link to="/simulador-bolsa-familia-2026" className="text-secondary-foreground/80 hover:text-secondary-foreground transition-colors underline-offset-4 hover:underline">
                   Simulador Bolsa Família 2026
                 </Link>
               </li>
@@ -80,24 +80,24 @@ const Footer = () => {
           {/* Canais Oficiais */}
           <div>
             <h3 className="font-bold text-lg mb-4">Canais Oficiais</h3>
-            <ul className="space-y-2 text-sm text-muted-foreground">
+            <ul className="space-y-2 text-sm">
               <li>
-                <a href="https://www.gov.br" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+                <a href="https://www.gov.br" target="_blank" rel="noopener noreferrer" className="text-secondary-foreground/80 hover:text-secondary-foreground transition-colors underline-offset-4 hover:underline">
                   Gov.br - Portal Oficial
                 </a>
               </li>
               <li>
-                <a href="https://meu.inss.gov.br" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+                <a href="https://meu.inss.gov.br" target="_blank" rel="noopener noreferrer" className="text-secondary-foreground/80 hover:text-secondary-foreground transition-colors underline-offset-4 hover:underline">
                   Meu INSS
                 </a>
               </li>
               <li>
-                <a href="https://www.caixa.gov.br" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+                <a href="https://www.caixa.gov.br" target="_blank" rel="noopener noreferrer" className="text-secondary-foreground/80 hover:text-secondary-foreground transition-colors underline-offset-4 hover:underline">
                   Caixa Econômica Federal
                 </a>
               </li>
               <li>
-                <a href="https://www.gov.br/cidadania" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+                <a href="https://www.gov.br/cidadania" target="_blank" rel="noopener noreferrer" className="text-secondary-foreground/80 hover:text-secondary-foreground transition-colors underline-offset-4 hover:underline">
                   Ministério Desenvolvimento Social
                 </a>
               </li>
@@ -106,7 +106,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-border pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-muted-foreground">
+        <div className="border-t border-secondary-foreground/20 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-secondary-foreground/70">
           <p>© {new Date().getFullYear()} Socio-Guide. Todos os direitos reservados.</p>
           <p className="mt-2 md:mt-0">
             Site educacional independente - Não somos órgão governamental
