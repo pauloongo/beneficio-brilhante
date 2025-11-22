@@ -7,6 +7,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { LogOut, ShieldAlert } from "lucide-react";
 import PostsManager from "@/components/admin/PostsManager";
 import AdsManager from "@/components/admin/AdsManager";
+import AuthorsManager from "@/components/admin/AuthorsManager";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Admin = () => {
@@ -117,13 +118,18 @@ const Admin = () => {
 
       <main className="container mx-auto max-w-7xl py-8 px-4">
         <Tabs defaultValue="posts" className="w-full">
-          <TabsList className="grid w-full max-w-md grid-cols-2">
+          <TabsList className="grid w-full max-w-md grid-cols-3">
             <TabsTrigger value="posts">Posts</TabsTrigger>
+            <TabsTrigger value="authors">Autores</TabsTrigger>
             <TabsTrigger value="ads">Anúncios</TabsTrigger>
           </TabsList>
 
           <TabsContent value="posts" className="mt-6">
             <PostsManager />
+          </TabsContent>
+
+          <TabsContent value="authors" className="mt-6">
+            <AuthorsManager />
           </TabsContent>
 
           <TabsContent value="ads" className="mt-6">

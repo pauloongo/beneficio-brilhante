@@ -9,6 +9,7 @@ import { Helmet } from "react-helmet";
 import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const Blog = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -219,6 +220,7 @@ const Blog = () => {
           </div>
         </main>
       </div>
+      <Footer />
     </>
   );
 };

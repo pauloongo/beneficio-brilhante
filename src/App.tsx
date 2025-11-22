@@ -14,6 +14,8 @@ import Calculadoras from "./pages/Calculadoras";
 import SimuladorBolsaFamilia2026 from "./pages/SimuladorBolsaFamilia2026";
 import Sitemap from "./pages/Sitemap";
 import NotFound from "./pages/NotFound";
+import PoliticaPrivacidade from "./pages/PoliticaPrivacidade";
+import TermosUso from "./pages/TermosUso";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +34,8 @@ const App = () => (
           <Route path="/calculadoras" element={<Calculadoras />} />
           <Route path="/simulador-bolsa-familia-2026" element={<SimuladorBolsaFamilia2026 />} />
           <Route path="/sitemap.xml" element={<Sitemap />} />
+          <Route path="/politica-de-privacidade" element={<PoliticaPrivacidade />} />
+          <Route path="/termos-de-uso" element={<TermosUso />} />
           <Route path="/auth" element={<Auth />} />
           <Route path="/admin" element={<Admin />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
